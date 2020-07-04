@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+.App {
+  text-align: center;
+}
+
+#outer-container {
+ height: 100vh;
+ width: 100vw;
+ display: block;
+}
+
+#page-wrap {
+  display: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*/////////HEADER NAME ////////////*/
+
+.header-name-light div a, .header-name-red div a  {
+  position: absolute;
+  left: 36px;
+  top: 36px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header-name-dark div a {
+  color: white;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.header-name-red div a {
+  color: #f0544f;
+}
+
+@media all and (max-width: 499px) {
+  .header-name-light div a, .header-name-red div a  {
+    left: 10px;
+    top: 18px;
+    height: 20px;
+    position: absolute;
+    display: block;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 1299px){
+  .header-name-light div a, .header-name-red div a  {
+    top: 18px;
+    left: 18px;
+  }
+}
+
+/*////////FOOTER STUFF/////////*/
+.scroll-to-top button {
+  background: none;
+  border: none;
+  position: relative;
+  display: block;
+}
+
+.scroll-to-top button:hover {
+  cursor: pointer;
+  outline: none;
+}

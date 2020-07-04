@@ -1,0 +1,90 @@
+.Work{
+  padding:5px;
+
+}
+.Work-header{
+  font-size: 48px;
+  text-align: justify;
+  margin: auto;
+  padding: 5px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.fas{
+  color: black;
+}
+.job-cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: auto;
+}
+.fas{
+  margin-right: 5px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: mintcream;
+  border: 2px solid black;
+  width: 20vw;
+  padding: 2px;
+  margin-bottom: 15px;
+  border-radius: 12%; 
+}
+.card:hover{
+  box-shadow: 0 4px 5px rgba(0,0,0,0.8);
+ }
+.card-header{
+  border:none
+}
+
+.job{
+  font: outline;
+  text-align: justify;
+}
+@media screen and (max-width: 1329px) and (min-width: 950px) {
+  .Work-header{
+    font-size: 32px;
+    margin: 0 auto;
+    padding: 3px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  
+  .card{
+    background-color: mintcream;
+    border: 2px solid black;
+    width: 30vw;
+    padding: 2px;
+    margin-bottom: 15px;
+    border-radius: auto; 
+  }
+  .job-cards{
+    align-content: space-around;
+  }
+}
+
+@media screen and (max-width: 949px){
+  .Work-header{
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 1px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  .job-cards{
+    justify-content: space-around;
+  }
+  .card{
+    background-color: mintcream;
+    border: 2px solid black;
+    width: 45vw;
+    padding: 2px;
+    margin-bottom: 15px;
+    border-radius: auto;     
+  }
+}

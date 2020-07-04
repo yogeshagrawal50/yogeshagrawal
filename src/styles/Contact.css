@@ -1,0 +1,61 @@
+.contact{
+ 
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.heading{
+  font-weight: bolder;
+}
+.list{
+  list-style-type: none;
+  display: inline-flexbox;
+}
+.tbl-op ul{margin-left: 0
+  ;padding: 5px;
+  list-style-type: none;}
+
+.tbl-op li {
+  cursor: pointer;
+  display:inline-block;
+  padding: 5px;
+  
+}
+i:hover{
+  opacity: 0.7;
+}
+.cent {
+  border-radius: 10%;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);  
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+   
+   
+}
+.fab fa-github-square{
+  color: #55ACEE
+  
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
