@@ -25,7 +25,7 @@ function App() {
   return (
     <div id="outer-container" className="App">
       
-      <Router>
+      <Router  basename={window.location.pathname || ''}>
         <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
         <div id="page-wrap">
           <Switch>
