@@ -1,6 +1,4 @@
-import React, { Fragment } from 'react';
-import Bio from '../pages.js/Bio'
-import Portfolio from '../portfolio/Portfolio';
+import React from 'react';
 
 const Home = () => {
 	return (
