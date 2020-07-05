@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 949px){
   .Work-header{
-    font-size: 16px;
+    font-size: 48px;
     margin: 0 auto;
     padding: 1px;
     text-decoration: underline;
@@ -87,6 +87,28 @@
     background-color: mintcream;
     border: 2px solid black;
     width: 45vw;
+    padding: 2px;
+    margin-bottom: 15px;
+    border-radius: auto;     
+  }
+}
+
+@media screen and (max-width: 499px){
+  .Work-header{
+    font-size: 28px;
+    margin-left:10px;
+    padding: 1px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  .job-cards{
+    justify-content: space-around;
+  }
+  .card{
+    background-color: mintcream;
+    border: 2px solid black;
+    width: 80vw;
     padding: 2px;
     margin-bottom: 15px;
     border-radius: auto;     

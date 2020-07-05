@@ -95,7 +95,7 @@ li{
   border: 3px solid #fff;
 }
 ul {
-  display: block;
+  display: inline-block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -104,7 +104,7 @@ ul {
   padding-inline-start: 40px;
 }
 
-.icon{
+.fas .fab{
   width: 12px;
   height: 12px;
 }
