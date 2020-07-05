@@ -1,15 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 // import NavBar from '../NavBar';
 
 const Bio = () => {
   return (
     <div>
-      {/* <Fragment>
-        <NavBar />
-      </Fragment> */}
-
-      <div className='bio'>
+     <div className='bio'>
       <div className='bio-left-col'>
         <div className='bio-header'>Bio.</div>
       </div>

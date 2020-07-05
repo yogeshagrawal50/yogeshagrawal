@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import Bio from '../pages.js/Bio'
+import Portfolio from '../portfolio/Portfolio';
 
 const Home = () => {
 	return (
@@ -20,6 +22,7 @@ const Home = () => {
 					</ul>
 					
 			</div>
+		
 			{/* <div className='home-content'>
 					<img className='dp' src={require('./images/profilepic.jpg')}alt-text='Profile picture'></img>
 					<br />

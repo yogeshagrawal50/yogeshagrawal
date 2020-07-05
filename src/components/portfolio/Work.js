@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 const Work = () => {
 	return (
 		<div className='Work'>
-      <h2 className='Work-header'> <i className='fas fa-briefcase'></i>Work Experience </h2>
+      <h2 className='Work-header'> <i className='fas fa-hashtag'></i>Work Experience </h2>
 			<section className='Work-list'>
         <div className='job-cards'> 
 					<Card className='card'>
