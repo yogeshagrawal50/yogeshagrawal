@@ -25,7 +25,7 @@ function App() {
       
     <div id="outer-container" className="App">
 
-    <HashRouter>
+    <Router>
       <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
       <div id="page-wrap">
         <Switch>
@@ -37,7 +37,7 @@ function App() {
           <Route exact path='/project' component={Project} />
         </Switch>
       </div>
-    </HashRouter>
+    </Router>
 
   </div>
   );
