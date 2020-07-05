@@ -10,7 +10,7 @@ import './styles/NavBar.css';
 import './styles/Work.css';
 import './styles/Projects.css';
 
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router , HashRouter} from 'react-router-dom';
 import Home from './components/home/Home';
 import Bio from './components/pages.js/Bio';
 import BurgerMenu from './components/menu/BurgerMenu';
@@ -22,22 +22,24 @@ import Project from './components/portfolio/Project'
 
 function App() {
   return (
-    <div id="outer-container" className="App">
       
-      <Router >
-        <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
-        <div id="page-wrap">
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/bio' component={Bio} />
-            <Route exact path='/portfolio' component={Portfolio} />
-            <Route exact path='/resume' component={Resume} />
-            <Route exact path='/work' component={Work} />
-            <Route exact path='/project' component={Project} />
-          </Switch>
-        </div>
-      </Router>
-    </div>
+    <div id="outer-container" className="App">
+
+    <HashRouter>
+      <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+      <div id="page-wrap">
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/bio' component={Bio} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/work' component={Work} />
+          <Route exact path='/project' component={Project} />
+        </Switch>
+      </div>
+    </HashRouter>
+
+  </div>
   );
 }
 
