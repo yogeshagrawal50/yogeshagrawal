@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Work from './Work';
 import Project from './Project';
-import ScrollToTop from '../ScrollToTop'
+import ScrollToTop from '../menu/ScrollToTop'
 
 import Sidebar from '../menu/Sidebar';
 

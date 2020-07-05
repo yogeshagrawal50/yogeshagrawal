@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../NavBar';
+// import NavBar from '../NavBar';
 
 const Bio = () => {
   return (
     <div>
-      <Fragment>
+      {/* <Fragment>
         <NavBar />
-      </Fragment>
+      </Fragment> */}
 
       <div className='bio'>
       <div className='bio-left-col'>

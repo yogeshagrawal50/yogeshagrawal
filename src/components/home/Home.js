@@ -1,10 +1,4 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import SidebarMenu from '../menu/SidebarMenu';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Contact from '../pages.js/Contact';
-import BurgerMenu from '../menu/BurgerMenu';
-import Header from '../menu/Header';
 
 const Home = () => {
 	return (

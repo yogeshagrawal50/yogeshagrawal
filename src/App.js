@@ -18,7 +18,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Resume from './components/resume/Resume';
 import Contact from './components/pages.js/Contact';
 import Work from './components/portfolio/Work'
-import NavBar from './components/NavBar';
+// import NavBar from './components/menu/NavBar';
 import Project from './components/portfolio/Project'
 
 function App() {

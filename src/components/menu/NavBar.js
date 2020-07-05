@@ -14,10 +14,17 @@ class NavBar extends Component {
       marginLeft: '20px'
     };
     const items ={
+      display:'inline-block',
       fontSize: '16px',
       marginRight: '5%',
-      paddind:'3px',
+      padding:'3px',
       fontWeight:'bold'
+    }
+
+    const but={
+      display:'inline-block',
+      background:'transparent',
+      margin:'10px'
     }
     return (
     
@@ -28,10 +35,10 @@ class NavBar extends Component {
           <Nav className="mr-auto">            
           </Nav>
           <Nav style={items}>
-            <Nav.Link href='/bio'>Bio</Nav.Link>
-            <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
-            <Nav.Link href='/contact'>Contact</Nav.Link>
-            <Nav.Link href='/resume'> Resume</Nav.Link>
+            <Link to='/bio'><span sstyle={but}>Bio</span></Link>
+            <Link to ='/portfolio'>Portfolio</Link>
+            <Link to='#contact'>Contact</Link>
+            <Link to='#resume'> Resume</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import { CardDeck, Card, Modal } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import MyVerticallyCenteredModal from './Modal'
 import {demand,medical, crop,cancer} from './details'
