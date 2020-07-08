@@ -28,7 +28,6 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  overflow-y: scroll;
 }
 
 .bio-content {
