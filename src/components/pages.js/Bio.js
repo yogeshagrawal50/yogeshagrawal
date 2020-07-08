@@ -6,7 +6,6 @@ const Bio = () => {
   return (
     <div>
      <div className='bio'>
-
       <div className='bio-left-col'>
         <div className='bio-header'>Bio.</div>
       </div>

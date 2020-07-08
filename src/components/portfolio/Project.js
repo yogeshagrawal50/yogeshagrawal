@@ -24,7 +24,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								{demand.tags}
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i> {demand.subtitle}</Card.Text>
+							<Card.Text>{demand.subtitle}</Card.Text>
 							<div className='div-button'>
 								<Button
 									type='button'
@@ -97,7 +97,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								{crop.tags}
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>{crop.subtitle}</Card.Text>
+							<Card.Text>{crop.subtitle}</Card.Text>
 							<div className='div-button'>
 								<Button
 									type='button'
@@ -146,7 +146,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								{medical.tags}
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>{medical.subtitle}</Card.Text>
+							<Card.Text>{medical.subtitle}</Card.Text>
 							<div className='div-button'>
 								<Button
 									type='button'
@@ -198,7 +198,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								{cancer.tags}
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>{cancer.subtitle}</Card.Text>
+							<Card.Text>{cancer.subtitle}</Card.Text>
 							<div className='div-button'>
 								<Button
 									type='button'
@@ -264,7 +264,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								Tags:-React.js, MongoDB, Express.js, Node.js, HTML, CSS,REST API
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>
+							<Card.Text>
 								I built a Full-stack MERN contact keeper app with React hooks,
 								context & JWT authentication and build an API model using
 								express. Each user is unique and has their own set of contacts,
@@ -297,7 +297,7 @@ const Project = () => {
 								Tags:- Collaborative Filtering, Content-Based Filtering,
 								Content-Aware Filterin, Collaborative filtering
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>
+							<Card.Text>
 								Implemented a few recommendation algorithms and builtan ensemble
 								of these models to come up with our final recommendation system.
 							</Card.Text>
@@ -320,7 +320,7 @@ const Project = () => {
 							<Card.Subtitle className='mb-2 text-muted'>
 								Tags:-React.js, HTML, CSS, API - Github API
 							</Card.Subtitle>
-							<Card.Text><i class="fas fa-plus"></i>
+							<Card.Text>
 								I built this web application with React.js to search for Github
 								users. The user is able to search for a GitHub user handle and
 								the search must trigger a call to GitHub's API which takes you
