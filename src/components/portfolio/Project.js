@@ -1,17 +1,21 @@
-import React from 'react';
-import { Card, Button } from 'react-bootstrap';
-import { demand, crop, medical, cancer } from './details';
+import React, { useState } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
+import { Card } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import MyVerticallyCenteredModal from './Modal'
+import {demand,medical, crop,cancer} from './details'
+
 
 
 const Project = () => {
+	const [modalShow, setModalShow] = useState(false);
 	return (
 		<div className='project'>
 			<div className='projects-header'>
-				<h1 className='projects-header'>
-					<i class='fas fa-file-code'></i>Projects{' '}
-				</h1>
+				<h1 className='projects-header'><i class="fas fa-file-code"></i>Projects </h1>
 			</div>
 			<div className='project-list'>
+<<<<<<< HEAD
 				<div className='job-cards'>
 
 					<Card className='card'>
@@ -30,50 +34,63 @@ const Project = () => {
 									data-target='#forecastmodal'>
 									Know More
 								</Button>
+=======
+				<Accordion>
+					<div className='job-cards'>
+							<Card className='card'>
+								<Card.Body className='project-body'>
+									<Card.Title>{demand.title}</Card.Title>
+									<Card.Subtitle className='mb-2 text-muted'>
+										{demand.tags}
+									</Card.Subtitle>
+									<Card.Text>
+										{demand.subtitle}
+									</Card.Text>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										eventkey='0'
+										onClick={() => {
+											demand.key === 0 ? setModalShow(true): setModalShow(false)}}	>
+										know More
+									</Button>
+									</div>	
+									<MyVerticallyCenteredModal
+										show={modalShow}
+										onHide={() => setModalShow(false) }
+										text={demand.text}
+										title={demand.title}
+										key={demand.key}
+									/>
+								</Card.Body>
+							</Card>
+>>>>>>> parent of 24a7dbc... updated modal issue
 
-								<div
-									class='modal fade'
-									id='forecastmodal'
-									tabindex='-1'
-									role='dialog'
-									aria-labelledby='exampleModalCenterTitle'
-									aria-hidden='true'>
-									<div
-										class='modal-dialog modal-dialog-centered'
-										role='document'>
-										<div class='modal-content'>
-											<div class='modal-header'>
-												<h5 class='modal-title' id='exampleModalLongTitle'>
-													{demand.title}
-												</h5>
-												<button
-													type='button'
-													class='close'
-													data-dismiss='modal'
-													aria-label='Close'>
-													<span aria-hidden='true'>&times;</span>
-												</button>
-											</div>
-											<div class='modal-body'>
-												<h6>{demand.tags}</h6>
-												<br />
-												{demand.desc}
-											</div>
-											<div class='modal-footer'>
-												<button
-													type='button'
-													class='btn btn-secondary'
-													data-dismiss='modal'>
-													Close
-												</button>
-											</div>
-										</div>
+							<Card className='card'>
+								<Card.Body className='project-body' >
+									<Card.Title>{cancer.title}</Card.Title>
+									<Card.Subtitle className='mb-2 text-muted'>
+										{cancer.tags}
+									</Card.Subtitle>
+									<Card.Text>
+										{cancer.subtitle}
+									</Card.Text>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										eventkey='1'
+										onClick={() => setModalShow(true)}>
+										know More
+									</Button>
 									</div>
-								</div>
-							</div>
-						</Card.Body>
-					</Card>
 
+<<<<<<< HEAD
 					<Card className='card'>
 						<Card.Body className='project-body'>
 							<Card.Title>{crop.title}</Card.Title>
@@ -90,50 +107,39 @@ const Project = () => {
 									data-target='#cropmodal'>
 									Know More
 								</Button>
+=======
+									<MyVerticallyCenteredModal
+										show={modalShow}
+										onHide={() => setModalShow(false)}
+										text={cancer.desc}
+										title={cancer.title}
+									/> 									
+								</Card.Body>
+							</Card>
+>>>>>>> parent of 24a7dbc... updated modal issue
 
-								<div
-									class='modal fade'
-									id='cropmodal'
-									tabindex='-1'
-									role='dialog'
-									aria-labelledby='exampleModalCenterTitle'
-									aria-hidden='true'>
-									<div
-										class='modal-dialog modal-dialog-centered'
-										role='document'>
-										<div class='modal-content'>
-											<div class='modal-header'>
-												<h5 class='modal-title' id='exampleModalLongTitle'>
-													{crop.title}
-												</h5>
-												<button
-													type='button'
-													class='close'
-													data-dismiss='modal'
-													aria-label='Close'>
-													<span aria-hidden='true'>&times;</span>
-												</button>
-											</div>
-											<div class='modal-body'>
-												<h6>{crop.tags}</h6>
-												<br />
-												{crop.desc}
-											</div>
-											<div class='modal-footer'>
-												<button
-													type='button'
-													class='btn btn-secondary'
-													data-dismiss='modal'>
-													Close
-												</button>
-											</div>
-										</div>
+							<Card className='card'>
+								<Card.Body className='project-body'>
+									<Card.Title>{medical.title}</Card.Title>
+									<Card.Subtitle className='mb-2 text-muted'>
+										{medical.tags}
+									</Card.Subtitle>
+									<Card.Text>
+										{medical.subtitle}
+									</Card.Text>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										eventkey='2'
+										onClick={() => setModalShow(true)}>
+										know More
+									</Button>
 									</div>
-								</div>
-							</div>
-						</Card.Body>
-					</Card>
 
+<<<<<<< HEAD
 					<Card className='card'>
 						<Card.Body className='project-body'>
 							<Card.Title>{medical.title}</Card.Title>
@@ -150,50 +156,42 @@ const Project = () => {
 									data-target='#exampleModalCenter'>
 									Know More
 								</Button>
+=======
+									<MyVerticallyCenteredModal
+										show={modalShow}
+										onHide={() => setModalShow(false)}
+										eventkey='2'
+										text={medical.desc}
+										title={medical.title}
+									/> 					
+								</Card.Body>
+							</Card>
+>>>>>>> parent of 24a7dbc... updated modal issue
 
-								<div
-									class='modal fade'
-									id='exampleModalCenter'
-									tabindex='-1'
-									role='dialog'
-									aria-labelledby='exampleModalCenterTitle'
-									aria-hidden='true'>
-									<div
-										class='modal-dialog modal-dialog-centered'
-										role='document'>
-										<div class='modal-content'>
-											<div class='modal-header'>
-												<h5 class='modal-title' id='exampleModalLongTitle'>
-													{medical.title}
-												</h5>
-												<button
-													type='button'
-													class='close'
-													data-dismiss='modal'
-													aria-label='Close'>
-													<span aria-hidden='true'>&times;</span>
-												</button>
-											</div>
-											<div class='modal-body'>
-												<h6>{medical.tags}</h6>
-												<br />
-												{medical.desc}
-											</div>
-											<div class='modal-footer'>
-												<button
-													type='button'
-													class='btn btn-secondary'
-													data-dismiss='modal'>
-													Close
-												</button>
-											</div>
-										</div>
+							<Card className='card'>
+								<Card.Body className='project-body'>
+									<Card.Title>
+										{crop.title}
+									</Card.Title>
+									<Card.Subtitle className='mb-2 text-muted'>
+										{crop.tags}
+									</Card.Subtitle>
+									<Card.Text>
+										{crop.subtitle}
+									</Card.Text>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										eventkey='3'
+										onClick={() => setModalShow(true)}>
+										know More
+									</Button>
 									</div>
-								</div>
-							</div>
-						</Card.Body>
-					</Card>
 
+<<<<<<< HEAD
 					<Card className='card'>
 						<Card.Body className='project-body'>
 							<Card.Title>{cancer.title}</Card.Title>
@@ -210,45 +208,51 @@ const Project = () => {
 									data-target='#cancermodal'>
 									Know More
 								</Button>
+=======
+									<MyVerticallyCenteredModal
+										show={modalShow}
+										onHide={() => setModalShow(false)}
+										eventkey='3'
+										text={crop.desc}
+										title={crop.title}
+									/>
+								</Card.Body>
+							</Card>
+>>>>>>> parent of 24a7dbc... updated modal issue
 
-								<div
-									class='modal fade'
-									id='cancermodal'
-									tabindex='-1'
-									role='dialog'
-									aria-labelledby='exampleModalCenterTitle'
-									aria-hidden='true'>
-									<div
-										class='modal-dialog modal-dialog-centered'
-										role='document'>
-										<div class='modal-content'>
-											<div class='modal-header'>
-												<h5 class='modal-title' id='exampleModalLongTitle'>
-													{cancer.title}
-												</h5>
-												<button
-													type='button'
-													class='close'
-													data-dismiss='modal'
-													aria-label='Close'>
-													<span aria-hidden='true'>&times;</span>
-												</button>
-											</div>
-											<div class='modal-body'>
-												<h6>{cancer.tags}</h6>
-												<br />
-												{cancer.desc}
-											</div>
-											<div class='modal-footer'>
-												<button
-													type='button'
-													class='btn btn-secondary'
-													data-dismiss='modal'>
-													Close
-												</button>
-											</div>
-										</div>
+							<Card className='card'>
+								<Card.Body className='project-body'>
+									<Card.Title>Phone Book</Card.Title>
+									<Card.Subtitle className='mb-2 text-muted'>
+										Tags:-React.js, MongoDB, Express.js, Node.js, HTML, CSS,REST
+										API
+									</Card.Subtitle>
+									<Card.Text>
+										I built a Full-stack MERN contact keeper app with React
+										hooks, context & JWT authentication and build an API model
+										using express. Each user is unique and has their own set of
+										contacts, they can also filter, search, update, delete their
+										contacts to view specific people.
+									</Card.Text>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										href='https://github.com/yogeshagrawal50/PhoneBook_MERN'>
+										Github
+									</Button>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										href='https://contactmanagers.herokuapp.com/'>
+										App Link
+									</Button>
 									</div>
+<<<<<<< HEAD
 								</div>
 							</div>
 						</Card.Body>
@@ -325,27 +329,73 @@ const Project = () => {
 								displayed on the page.
 							</Card.Text>
 							<div className='div-button'>
+=======
+								</Card.Body>
+							</Card>
+							<Card className='card'>
+								<Card.Body className='project-body'>
+									<div>
+										<Card.Title>Movie Recommedation System</Card.Title>
+										<Card.Subtitle className='mb-2 text-muted'>
+											Tags:- Collaborative Filtering, Content-Based Filtering,
+											Content-Aware Filterin, Collaborative filtering
+										</Card.Subtitle>
+										<Card.Text>
+											Implemented a few recommendation algorithms and builtan
+											ensemble of these models to come up with our final
+											recommendation system.
+										</Card.Text>
+									</div>
+									<div className='div-button'>
+									<Button
+										className='button'
+										variant='dark'
+										type='radio'
+										size='sm'
+										href='https://github.com/yogeshagrawal50/Movie-Recommendation-System'>
+										Github
+									</Button>
+									</div>
+								
+								</Card.Body>
+							</Card>
+						<Card className='card'>
+							<Card.Body className='project-body'>
+								<Card.Title>Github Users</Card.Title>
+								<Card.Subtitle className='mb-2 text-muted'>
+									Tags:-React.js, HTML, CSS, API - Github API
+								</Card.Subtitle>
+								<Card.Text>
+									I built this web application with React.js to search for
+									Github users. The user is able to search for a GitHub user
+									handle and the search must trigger a call to GitHub's API
+									which takes you to repositories associated with that handle.
+									The repository name and link to the repository URL are made
+									available and gets displayed on the page.
+								</Card.Text>
+								<div className='div-button'>
+>>>>>>> parent of 24a7dbc... updated modal issue
 								<Button
-									href='https://github.com/yogeshagrawal50/Github_user_finder'
-									variant="dark"
-									class='btn-dark'
-									role='button'
-									aria-pressed='true'>
+									className='button'
+									variant='dark'
+									type='radio'
+									size='sm'
+									href='https://github.com/yogeshagrawal50/Github_user_finder'>
 									Github
 								</Button>
-
 								<Button
-									href='https://userfindergit.netlify.app/'
-									variant="dark"
-									class='btn-dark'
-									role='button'
-									aria-pressed='true'>
+									className='button'
+									variant='dark'
+									type='radio'
+									size='sm'
+									href='https://userfindergit.netlify.app/'>
 									App Link
 								</Button>
-							</div>
-						</Card.Body>
-					</Card>
-				</div>
+								</div>
+							</Card.Body>
+						</Card>
+					</div>
+				</Accordion>
 			</div>
 		</div>
 	);

@@ -57,14 +57,13 @@ h1{
 } */
 .div-button{
   margin-top: auto;
-  align-self: center;
 
 }
 .projectcard:hover{
  box-shadow: 0 4px 5px rgba(0,0,0,0.8);
 }
 
-.btn-dark{
+.button{
   size: 10px;
   margin: 3px; 
   border-radius:0.5em;
@@ -74,7 +73,7 @@ h1{
   align-items: flex-end;
 }
 
-.btn-dark:hover{
+.button:hover{
   transition: all 0.4s ease 0s
 }
 

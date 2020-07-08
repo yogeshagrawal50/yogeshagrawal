@@ -25,7 +25,7 @@ function App() {
       
     <div id="outer-container" className="App">
 
-    <Router>
+    <Router history={hashHistory}>
       <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
       <div id="page-wrap">
         <Switch>
