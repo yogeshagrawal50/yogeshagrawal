@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Work from './Work';
 import Header from '../menu/Header';
 import Project from './Project';
+import NavBar from '../menu/NavBar'
+
 
 import Sidebar from '../menu/Sidebar';
 

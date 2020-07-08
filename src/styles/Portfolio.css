@@ -4,6 +4,10 @@
   background: white ;
   overflow: scroll;
 }
+
+.navbar{
+  visibility: hidden;
+}
 .divider-red {
   height: 4px;
   width: 60vw;
@@ -167,6 +171,7 @@
 }
 
 @media screen and (max-width: 499px) {
+
   .portfolio {
     display: inline-block;
     overflow-y: scroll;

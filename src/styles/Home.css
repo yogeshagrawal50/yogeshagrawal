@@ -5,6 +5,7 @@
   overflow: hidden;
   background-image: url('../components/home/images/back.jpg');
   background-size: cover;
+  opacity: 1;
 }
 .vert{
   color: #fff;

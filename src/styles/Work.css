@@ -14,10 +14,12 @@
 .fas{
   color:white;
 }
-.fa-hashtag{
-  fill:rgba(0,0,0,1);
+.card-title{
+  text-align: center;
 }
-
+.fa-plus {
+  color:black
+}
 .job-cards{
   display: flex;
   flex-wrap: wrap;
