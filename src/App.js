@@ -25,11 +25,7 @@ function App() {
       
     <div id="outer-container" className="App">
 
-<<<<<<< HEAD
-    <Router history={hashHistory}>
-=======
     <HashRouter>
->>>>>>> parent of 0619390... upadated
       <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
       <div id="page-wrap">
         <Switch>
