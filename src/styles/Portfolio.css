@@ -28,7 +28,9 @@
   border-right: black;
  
 }
-
+.fa-plus{
+  color: black;
+}
 .portfolio-right-col {
   right:0;
   width: 75%;
