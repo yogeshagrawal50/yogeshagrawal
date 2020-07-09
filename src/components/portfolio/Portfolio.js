@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Work from './Work';
 import Header from '../menu/Header';
 import Project from './Project';
@@ -7,6 +6,8 @@ import NavBar from '../menu/NavBar'
 
 
 import Sidebar from '../menu/Sidebar';
+import { Element } from 'react-scroll';
+
 
 const Portfolio = () => {
 	return (
@@ -24,16 +25,25 @@ const Portfolio = () => {
 					<div className='portfolio-right-col'>
 							
 						<div className='about-container'>
-							<section id='work'>
+							{/* <section id='work'>
 								<Work />
-							</section>
+							</section> */}
+
+							<Element name="work" className="element" >
+								<Work />
+							</Element>
 
 							<div class='divider-red'></div>
 
+							{/* 
 							<section id='project'>
 								<Project />
-							</section>
-							
+							</section> */}
+
+							<Element name="projects" className="element" >
+								<Project />
+							</Element>
+
 							<div class='divider-red'></div>
 
 						</div>
