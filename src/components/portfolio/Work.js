@@ -43,7 +43,7 @@ const Work = () => {
 						<Card.Header>
 							<h4>MSIS, MAHE</h4>
 							<h5>
-								TRAINING AND PROJECT INTERN{' '}
+								TRAINING AND PROJECT INTERN
 								</h5>
                 <span><h6>10 June 2019– 29 June 2019 | Manipal</h6>
 								<h6><span><i class="fas fa-plus"></i></span>
